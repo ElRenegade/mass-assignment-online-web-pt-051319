@@ -4,6 +4,6 @@ class Person
 :wrist_size, :glove_size, :pant_length, :pant_width
 
   def initialize(properties)
-    properties.each { |key, v| self.send(("#{key=}"), v) }
+    properties.each { |key, v| self.send(("#{key}="), v) }
   end
 end
